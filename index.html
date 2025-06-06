@@ -1,5 +1,526 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<!-- Conteúdo completo do HTML omitido por brevidade -->
-<!-- No código real, o conteúdo inteiro seria colocado aqui -->
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIEX - Reduza Custos do Sistema S Legalmente</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                padding-top: 68px; /* Ajuste para o header fixo */
+            }
+            .header-bg {
+                background-color: #001f3f; /* Azul escuro TIEX */
+            }
+            .hero-bg {
+                background-color: #003366; /* Azul corporativo TIEX */
+            }
+            .section-title {
+                font-size: 2.25rem; /* 36px */
+                font-weight: 700;
+                color: #1a202c; /* Cinza escuro */
+                margin-bottom: 1.5rem; /* 24px */
+            }
+            .section-subtitle {
+                font-size: 1.125rem; /* 18px */
+                color: #4a5568; /* Cinza médio */
+                margin-bottom: 2.5rem; /* 40px */
+                max-width: 700px; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card {
+                background-color: white;
+                border-radius: 0.75rem; /* 12px */
+                padding: 2rem; /* 32px */
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                height: 100%; 
+            }
+            .card:hover {
+                transform: translateY(-5px);
+            }
+            .card-content {
+                flex-grow: 1; 
+            }
+            .cta-button-yellow { 
+                background-color: #f59e0b; 
+                color: white;
+                font-weight: 600;
+                padding: 0.75rem 1.5rem; 
+                border-radius: 0.5rem; 
+                transition: background-color 0.3s ease;
+                display: inline-block; 
+            }
+            .cta-button-yellow:hover {
+                background-color: #d97706;
+            }
+            .cta-button-header { 
+                background-color: white;
+                color: #001f3f; 
+                font-weight: 600;
+                padding: 0.5rem 1rem; 
+                border-radius: 0.375rem; 
+                transition: background-color 0.3s ease, color 0.3s ease;
+                border: 1px solid transparent; 
+                display: inline-block;
+            }
+            .cta-button-header:hover {
+                background-color: #f0f0f0; 
+                color: #001a33;
+            }
+            .footer-bg {
+                background-color: #001f3f; 
+                color: #e2e8f0; 
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .mobile-menu-button:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); 
+            }
+            .search-icon-button {
+                padding: 0.5rem;
+                color: white;
+                transition: color 0.3s ease;
+            }
+            .search-icon-button:hover {
+                color: #d1d5db; 
+            }
+            .benefit-item-icon { /* Ícone para a nova seção de benefícios */
+                width: 2.5rem; /* 40px */
+                height: 2.5rem; /* 40px */
+                margin-right: 1rem; /* 16px */
+                color: #003366; /* Azul TIEX */
+                flex-shrink: 0;
+            }
+            .how-it-works-step {
+                background-color: white;
+                border-radius: 0.75rem;
+                padding: 1.5rem; /* 24px */
+                box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+                margin-bottom: 1.5rem; /* 24px */
+                display: flex;
+                align-items: flex-start;
+            }
+            .how-it-works-number {
+                background-color: #003366; /* Azul TIEX */
+                color: white;
+                border-radius: 50%;
+                width: 3rem; /* 48px */
+                height: 3rem; /* 48px */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem; /* 24px */
+                font-weight: 700;
+                margin-right: 1.5rem; /* 24px */
+                flex-shrink: 0;
+            }
+            .footer-icon {
+                width: 1.25rem; 
+                height: 1.25rem; 
+                margin-right: 0.5rem; 
+                fill: currentColor;
+            }
+            .social-icon {
+                width: 2rem; 
+                height: 2rem; 
+                transition: opacity 0.3s ease;
+            }
+            .social-icon:hover {
+                opacity: 0.8;
+            }
+            .testimonial-card {
+                background-color: #f9fafb; 
+                border: 1px solid #e5e7eb; 
+            }
+            .testimonial-avatar {
+                width: 4rem; 
+                height: 4rem; 
+                border-radius: 50%;
+                background-color: #003366; 
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem; 
+                font-weight: 600;
+                margin-right: 1rem; 
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50">
+
+        <!-- Header -->
+        <header class="header-bg shadow-md fixed w-full z-20 top-0 left-0">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                        <a href="https://tiex.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Página inicial da TIEX">
+                            <img class="h-8 w-auto" src="https://res.cloudinary.com/dt9bq18tq/image/upload/v1749174765/logo_white_ql2g1h.png" alt="Logo TIEX" onerror="this.onerror=null; this.src='https://placehold.co/100x32/001f3f/FFFFFF?text=TIEX'; this.alt='Logo TIEX (fallback)';">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex md:items-center md:space-x-2 lg:space-x-3">
+                        <a href="https://tiex.com.br/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="https://tiex.com.br/institucional/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">Institucional</a>
+                        <a href="https://tiex.com.br/servicos/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">Serviços</a>
+                        <a href="https://tiex.com.br/responsabilidade-social/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">Responsabilidade Social</a>
+                        <a href="https://tiex.com.br/trabalhe-conosco/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">Faça parte do nosso Time</a>
+                        <a href="https://tiex.com.br/faq/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 px-2 py-2 rounded-md text-sm font-medium">FAQ</a>
+                        <button aria-label="Buscar" class="search-icon-button ml-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <a href="#contato" class="cta-button-header ml-3 text-sm">Fale Conosco</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Abrir menu principal</span>
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="md:hidden hidden header-bg" id="mobile-menu"> 
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="https://tiex.com.br/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="https://tiex.com.br/institucional/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">Institucional</a>
+                    <a href="https://tiex.com.br/servicos/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">Serviços</a>
+                    <a href="https://tiex.com.br/responsabilidade-social/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">Responsabilidade Social</a>
+                    <a href="https://tiex.com.br/trabalhe-conosco/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">Faça parte do nosso Time</a>
+                    <a href="https://tiex.com.br/faq/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+                    <a href="#contato" class="cta-button-header block w-full text-center mt-2 py-2 text-base">Fale Conosco</a>
+                </div>
+            </div>
+        </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white pt-20 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">💰 Reduza Custos do Sistema S de Forma Legal e Estratégica com a TIEX!</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Sua empresa pode estar pagando mais do que o necessário. Nossa consultoria especializada analisa suas contribuições ao Sistema S, identifica oportunidades de economia e apoia na recuperação de valores pagos indevidamente. Otimize seus custos com inteligência fiscal!</p>
+            <a href="#contato" class="cta-button-yellow text-lg">Venha saber mais</a> 
+        </div>
+    </section>
+
+    <!-- Sobre o Sistema S e a Oportunidade Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">O Sistema S e Suas Contribuições: Um Custo Analisável</h2>
+            <p class="section-subtitle text-center">
+                O Sistema S — que inclui organizações como SESI, SENAI, SESC, SENAC, SEBRAE, SENAR, entre outras — é fundamental para o desenvolvimento profissional e social do país. Ele é financiado por contribuições obrigatórias, calculadas sobre a folha de pagamento das empresas.
+            </p>
+            <div class="text-center mb-10">
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Apesar de sua importância, essas contribuições representam um <strong class="text-blue-700">custo significativo e, muitas vezes, não analisado estrategicamente</strong> pelas organizações. O que poucas empresas sabem é que existem <strong class="text-blue-700">possibilidades legais de revisão e redução desses encargos</strong>, através de um planejamento tributário eficiente e alinhado à legislação vigente.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-10 items-stretch">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-700">O Desafio Financeiro das Contribuições</h3>
+                        <p class="text-gray-600">As alíquotas e bases de cálculo das contribuições ao Sistema S podem variar e, sem uma análise criteriosa, sua empresa pode estar pagando valores superiores ao devido. Isso impacta diretamente o fluxo de caixa e a capacidade de investimento.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-700">Sua Oportunidade de Economia Legal com a TIEX</h3>
+                        <p class="text-gray-600">A TIEX é especialista em transformar esse desafio em oportunidade. Nossa consultoria identifica caminhos legais para otimizar suas contribuições, recuperar créditos e garantir que sua empresa pague apenas o justo, de forma segura e 100% legal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios da Nossa Solução Section -->
+    <section id="beneficios" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Benefícios da Nossa Solução</h2>
+            <p class="section-subtitle text-center">
+                Descubra como nossa abordagem especializada pode transformar os custos da sua empresa com o Sistema S de forma totalmente legal e segura.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Benefício 1: Economia Substancial -->
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5z" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Economia Substancial</h3>
+                    </div>
+                    <p class="text-gray-600">Reduza em até 60% os valores pagos ao Sistema S, gerando economia imediata e significativa para sua empresa.</p>
+                </div>
+                <!-- Benefício 2: 100% Legal -->
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">100% Legal</h3>
+                    </div>
+                    <p class="text-gray-600">Nossa solução é baseada em jurisprudência consolidada e respaldada por decisões judiciais favoráveis em todo o Brasil.</p>
+                </div>
+                <!-- Benefício 3: Equipe Especializada -->
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.001M7.5 15.75c-3 0-6 3-6 3V6c0-3 3-3 6-3s6 3 6 3v9.75c0 .083-.003.166-.009.248m-3 0a9.008 9.008 0 0 0-2.799 0M15 15.75a9.008 9.008 0 0 0-2.799 0m0 0A12.34 12.34 0 0 0 12 13.5c-1.046 0-2.043.195-2.986.55M15 15.75v-.003c0-.849-.211-1.63-.588-2.325M15 15.75v.106A12.318 12.318 0 0 1 8.624 18c-2.331 0-4.512-.645-6.374-1.766l-.001-.001" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Equipe Especializada</h3>
+                    </div>
+                    <p class="text-gray-600">Contamos com advogados tributaristas e consultores com mais de 15 anos de experiência no setor.</p>
+                </div>
+                <!-- Benefício 4: Implementação Rápida -->
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.324h5.372c.557 0 .786.526.372.886l-4.184 3.033a.563.563 0 0 0-.182.657l1.596 4.834a.562.562 0 0 1-.812.622l-4.123-3.02a.563.563 0 0 0-.668 0L7.21 20.02a.562.562 0 0 1-.812-.622l1.596-4.834a.563.563 0 0 0-.182-.657l-4.184-3.033a.562.562 0 0 1 .372-.886h5.372a.563.563 0 0 0 .475-.324L11.48 3.5Z" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Implementação Rápida</h3>
+                    </div>
+                    <p class="text-gray-600">Em apenas 30 dias, sua empresa já começa a economizar com nossa solução, sem interrupção das suas operações.</p>
+                </div>
+                <!-- Benefício 5: Resultados Comprovados -->
+                <div class="card">
+                    <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Resultados Comprovados</h3>
+                    </div>
+                    <p class="text-gray-600">Mais de 500 empresas já economizaram milhões com nossa metodologia exclusiva de redução de custos.</p>
+                </div>
+                <!-- Benefício 6: Segurança Jurídica -->
+                <div class="card">
+                     <div class="flex items-center mb-3">
+                        <svg class="benefit-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.602-3.751m-.227-1.011A11.969 11.969 0 0 0 12 2.25c-2.646 0-5.058.84-7.102 2.257Z" /></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Segurança Jurídica</h3>
+                    </div>
+                    <p class="text-gray-600">Acompanhamento jurídico completo durante todo o processo, garantindo tranquilidade para sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Como Funciona</h2>
+            <p class="section-subtitle text-center">
+                Nosso processo é simples, transparente e eficiente. Veja como podemos ajudar sua empresa a reduzir custos com o Sistema S.
+            </p>
+            <div class="max-w-3xl mx-auto mt-12">
+                <!-- Passo 1 -->
+                <div class="how-it-works-step">
+                    <div class="how-it-works-number">1</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Análise Inicial Gratuita</h3>
+                        <p class="text-gray-600 mb-2">Nossa equipe realiza uma análise detalhada da situação atual da sua empresa em relação às contribuições do Sistema S, identificando oportunidades de economia.</p>
+                        <p class="text-sm text-gray-500 italic">"Na análise inicial, identificamos em média uma economia potencial de 40% a 60% nos valores pagos ao Sistema S."</p>
+                    </div>
+                </div>
+                <!-- Passo 2 -->
+                <div class="how-it-works-step">
+                    <div class="how-it-works-number">2</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Planejamento Estratégico</h3>
+                        <p class="text-gray-600 mb-2">Desenvolvemos um plano personalizado para sua empresa, considerando seu setor de atuação, porte e características específicas do seu negócio.</p>
+                        <p class="text-sm text-gray-500 italic">"Cada empresa é única, por isso nosso planejamento é totalmente customizado para maximizar os resultados dentro da legalidade."</p>
+                    </div>
+                </div>
+                <!-- Passo 3 -->
+                <div class="how-it-works-step">
+                    <div class="how-it-works-number">3</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Implementação Segura</h3>
+                        <p class="text-gray-600 mb-2">Nossa equipe jurídica e contábil implementa as estratégias definidas, garantindo total conformidade legal e segurança para sua empresa.</p>
+                        <p class="text-sm text-gray-500 italic">"Utilizamos apenas métodos legais e comprovados juridicamente, com base em jurisprudência consolidada."</p>
+                    </div>
+                </div>
+                <!-- Passo 4 -->
+                <div class="how-it-works-step">
+                    <div class="how-it-works-number">4</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Acompanhamento Contínuo</h3>
+                        <p class="text-gray-600 mb-2">Oferecemos suporte contínuo e monitoramento constante para garantir que sua empresa continue economizando e esteja sempre em conformidade com a legislação.</p>
+                        <p class="text-sm text-gray-500 italic">"Nosso compromisso não termina com a implementação. Acompanhamos sua empresa continuamente para garantir resultados duradouros."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contato" class="cta-button-yellow text-lg px-8 py-3">Quero Economizar Agora</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">O Que Nossos Clientes Dizem</h2>
+            <p class="section-subtitle text-center">
+                Veja os resultados reais que nossos clientes obtiveram ao implementar nossa solução para redução de custos do Sistema S.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- Testimonial 1 -->
+                <div class="card testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Marcos Silva</h3>
+                            <p class="text-sm text-gray-600">Diretor Financeiro, Empresa de Varejo</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "Conseguimos reduzir em 52% nossos custos com o Sistema S. A implementação foi rápida e sem complicações. O retorno sobre o investimento foi quase imediato."
+                    </blockquote>
+                    <p class="text-blue-700 font-semibold">Economia anual: R$ 480.000,00</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Ana Oliveira</h3>
+                            <p class="text-sm text-gray-600">CEO, Indústria de Alimentos</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "Estávamos céticos no início, mas os resultados falam por si. Economizamos mais de 45% nos custos do Sistema S, e tudo dentro da legalidade. Recomendo fortemente."
+                    </blockquote>
+                    <p class="text-blue-700 font-semibold">Economia anual: R$ 720.000,00</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Roberto Mendes</h3>
+                            <p class="text-sm text-gray-600">CFO, Empresa de Logística</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "A equipe da TIEX foi extremamente profissional e transparente durante todo o processo. A economia gerada superou nossas expectativas iniciais."
+                    </blockquote>
+                    <p class="text-blue-700 font-semibold">Economia anual: R$ 950.000,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contato" class="py-20 hero-bg"> 
+        <div class="container mx-auto px-6 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">💼 Otimize seus custos com inteligência fiscal.</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Descubra como sua empresa pode pagar menos ao Sistema S — de forma segura e 100% legal. Nossa equipe está pronta para realizar um diagnóstico e apresentar as melhores soluções.</p>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl text-gray-700">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Fale Conosco</h3>
+                <form action="#" method="POST"> <!-- Substitua "#" pelo endpoint do seu formulário -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-left mb-1">Nome Completo</label>
+                        <input type="text" name="name" id="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-left mb-1">Email</label>
+                        <input type="email" name="email" id="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="institution" class="block text-sm font-medium text-left mb-1">Nome da Empresa</label>
+                        <input type="text" name="institution" id="institution" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                     <div class="mb-4">
+                        <label for="phone" class="block text-sm font-medium text-left mb-1">Telefone (Opcional)</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-left mb-1">Mensagem</label>
+                        <textarea name="message" id="message" rows="4" required placeholder="Conte-nos um pouco sobre sua empresa e seu interesse em nossa consultoria para o Sistema S." class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button-yellow w-full text-lg">Solicitar Diagnóstico Gratuito</button> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-10 pb-6 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <!-- Coluna Logo e Copyright -->
+                <div class="md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
+                    <img class="h-10 w-auto mb-4" src="https://res.cloudinary.com/dt9bq18tq/image/upload/v1749174765/logo_white_ql2g1h.png" alt="Logo TIEX Branca" onerror="this.onerror=null; this.src='https://placehold.co/120x40/001f3f/FFFFFF?text=TIEX'; this.alt='Logo TIEX (fallback)';">
+                </div>
+
+                <!-- Coluna Nossos Contatos -->
+                <div class="md:col-span-1 text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-3">Nossos contatos</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.003a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.003.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"></path></svg>
+                            <a href="tel:1144802000" class="hover:text-gray-300">11 4480-2000</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                           <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM9.01 13.09c.148-.063.292-.132.43-.205a.75.75 0 01.876.012c.09.049.19.088.291.12C11.39 13.279 12 13 12 12.42V8.459c0-.44-.349-.806-.787-.847A1.033 1.033 0 0010.25 8.5v3.259c0 .243-.17.458-.408.513a.5.5 0 01-.52-.613V8.5A1.75 1.75 0 0111 6.756c.005-.004.01-.01.015-.014L11 6.75c.307 0 .598.084.852.235.253.151.458.375.592.64C12.793 7.973 13 8.65 13 9.399v2.858c0 .487-.208.93-.554 1.25a1.987 1.987 0 01-1.38.64c-.05.003-.1.006-.151.006A2.01 2.01 0 019 12.63v-2.9A2.008 2.008 0 017.58 8.03c-.004-.009-.01-.017-.015-.025L7.564 8c-.378 0-.73.111-1.012.31a1.99 1.99 0 00-.817.842A2.071 2.071 0 005.5 10v2.449c0 .385.161.74.437.994.276.254.629.407.998.407.058 0 .117-.003.175-.01a2.006 2.006 0 001.9-1.742zM7 6.75A1.75 1.75 0 018.75 5h.004C9.646 5 10.37 5.703 10.495 6.5h-3A1.75 1.75 0 016 8.25V9.5h-.5A1.75 1.75 0 013.75 11.25V12.5h.5c.966 0 1.75-.784 1.75-1.75V6.75z" clip-rule="evenodd"></path></svg>
+                            <a href="https://wa.me/551144802000" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">+55 (11) 4480-2000</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"></path><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"></path></svg>
+                            <a href="mailto:contato@tiex.com.br" class="hover:text-gray-300">contato@tiex.com.br</a>
+                        </li>
+                        <li class="flex items-start justify-center md:justify-start mt-2">
+                            <svg class="footer-icon mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.145l.005-.002.007-.004.012-.007a5.852 5.852 0 00.24-.116l.006-.003.016-.01l.019-.012l.006-.004a5.186 5.186 0 00.413-.293l.004-.003.007-.005.013-.01.029-.023l.005-.004a4.505 4.505 0 001.076-.908c.346-.39.633-.82.848-1.284l.002-.005.004-.01c.19-.403.314-.833.373-1.29l.008-.06A6.113 6.113 0 0014.25 10c0-3.443-2.793-6.25-6.25-6.25S1.75 6.557 1.75 10c0 1.54.563 2.933 1.488 4.03l.004.005c.216.29.47.556.758.797l.003.003a5.186 5.186 0 00.413.293l.004.003.007.005.013.01.029.023l.005.004a4.505 4.505 0 001.076.908c.346.39.633.82.848-1.284l.002-.005.004-.01c.19-.403.314-.833.373-1.29l.008-.06A6.113 6.113 0 005.75 10c0-3.443 2.793-6.25 6.25-6.25S18.25 6.557 18.25 10a6.113 6.113 0 00-.07.728l.008.06c.059.457.183.887.373 1.29l.004.01.002.005c.215.464.502.895.848 1.284a4.505 4.505 0 001.076.908l.005.004.029.023.013.01.007.005.004.003a5.186 5.186 0 00.413.293l.006.004.019.012.016.01.006.003a5.852 5.852 0 00.24.116l.012.007.007.004.005.002a5.741 5.741 0 00.281.145l.018.008.006.003.003.001zm-4.673-2.512a1 1 0 00-1.414-1.414L6.968 17.64a1 1 0 001.414 1.414l1.03-1.03zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                            <span>Doutor Chucri Zaidan, 1550 - Conjunto 2303<br>Vila São Francisco 04711-130 São Paulo - SP</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Siga-nos -->
+                <div class="md:col-span-1 text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-3">Siga-nos</h3>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="https://www.linkedin.com/company/tiex/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da TIEX" class="text-white">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/grupotiex?igsh=Ym05ZG9vNWNua3Bt" target="_blank" rel="noopener noreferrer" aria-label="Instagram da TIEX" class="text-white">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://wa.me/551144802000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da TIEX" class="text-white"> <!-- Alterado o número do WhatsApp -->
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.712-1.001zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.297.297-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.523.074-.797.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-xs">
+                 <p>&copy; 2024 TIEX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para o menu hamburguer
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = menuButton.querySelector('svg:first-child');
+        const closeIcon = menuButton.querySelector('svg:last-child');
+
+        menuButton.addEventListener('click', () => {
+            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+            menuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a, #mobile-menu button').forEach(item => { 
+            item.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) { 
+                    menuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
